@@ -5,7 +5,7 @@ html, body {
 }
 
 .main{
-    background-image: url(public/background-dark.jpg);
+    background-image: url(icon/background-dark.jpg);
     background-size: cover; 
     background-position: center;
 }
