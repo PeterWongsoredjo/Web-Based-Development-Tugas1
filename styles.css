@@ -1,0 +1,264 @@
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: url(public/background-dark.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+
+p, span{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* HEADERS */
+
+.header{
+    width: 100%;
+    opacity: 80%;
+    padding: 30px 100px;
+    margin-bottom: 100px;
+    background: rgb(3, 3, 2);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.navbar a{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin-left: 40px;
+    display: inline-block; 
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar a:hover{
+    transform: scale(1.2);
+    text-shadow: 0 0 5px white,
+                 0 0 5px white;
+}
+
+/* PROFILE */
+
+.profile-section{
+    display: flex;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-left: 100px;
+}
+
+.profile-pic {
+    width: 400px;
+    padding: 15px;
+}
+
+.profile-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+.profile-name{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 100px;
+}
+
+.profile-desc{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 100px;
+    max-width: 800px;
+}
+
+.Nama{
+    color: #bb86fc;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.Deskripsi{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* EDUCATION  */
+
+.education-timeline {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-timeline-last {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dotted-line {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    border-left: 4px dotted white;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    z-index: 2;
+    border: 1px solid #222;
+}
+.circle.up {
+    left: calc(50% - 21px);
+    top: 0%;
+}
+.circle.bottom {
+    left: calc(50% - 21px);
+    top: 100%;
+}
+
+/* Education text */
+.education-timeline {
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+    margin-bottom: 30px;
+}
+
+.education-entry {
+    position: absolute;
+    top: -70px;
+    width: 300px;
+    background: transparent;
+    z-index: 2;
+    padding: 0;
+}
+.education-entry.right {
+    left: 55%;
+    text-align: left;
+}
+.education-entry.left {
+    right: 55%;
+    text-align: right;
+}
+.education-entry.right, .education-entry.left p{
+    font-size: 30px;
+    font-weight: 500;
+} 
+.edu-year {
+    font-size: 14px;
+    color: #5600e8;
+}
+
+/* PROJECTS */
+
+.flex-row {
+    display: flex;
+}
+
+.section-title{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-weight: bold;
+}
+
+.project-item {
+    padding: 15px;
+    display: flex;
+    width: 50%;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.project-pic {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#gendigital-logo {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.project-text {
+    padding: 10px;
+}
+
+.project-title {
+    padding-bottom: 10px;
+}
+
+.project-title p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #985eff;
+}
+
+.project-time p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Footer */
+.Referral {
+    background-color: black;
+    color: white;
+    padding: 30px 0 60px 0;
+    margin-top: 100px;
+    text-align: center;
+}
+.footer-contact span {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+}
+.footer-social {
+    margin-top: 15px;
+}
+.footer-icon {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-social a {
+    text-decoration: none;
+    outline: none;
+}
